@@ -33,16 +33,23 @@
             <form action="/signup" method="post">
                 <fieldset>
                     <legend>User personal information</legend>
-                    <label for="">Enter your full name</label><br>
-                    <input type="text" name="name"><br>
-                    <label for="">Enter your email</label><br>
-                    <input type="email" name="email"><br>
-                    <label for="">Enter your phone</label><br>
-                    <input type="text" name="phone">
-                    <br>
-                    <br><label for="">Select your gender</label><br>
+                    <label for="">Enter your full name</label>
+                    <input type="text" name="name">
+                    <label for="">Enter your email</label>
+                    <input type="email" name="email">
+                    <label for="">Enter your phone</label>
+                    <input type="text" name="phone">   
+                    <label for="">Select your gender</label>
                     <input type="radio" name="gender" value="male"> Male
                     <input type="radio" name="gender" value="female"> Female
+                    <label for="contact">How should we contact you?</label>
+                    <select name="contact" id="">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                    <label for="comment">Tell us the reason of your visit today:</label>
+                    <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
+                    <input type="submit" value="sign-up">
                 </fieldset>
             </form>
 
